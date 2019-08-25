@@ -1,0 +1,12 @@
+[submodule "strcase"]
+	path = strcase
+	url = https://github.com/rd235/strcase
+[submodule "libstropt"]
+	path = libstropt
+	url = https://github.com/rd235/libstropt
+[submodule "libfduserdata"]
+	path = libfduserdata
+	url = https://github.com/rd235/libfduserdata
+[submodule "libvpoll-eventfd"]
+	path = libvpoll-eventfd
+	url = https://github.com/rd235/libvpoll-eventfd
