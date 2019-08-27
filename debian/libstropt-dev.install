@@ -1,0 +1,4 @@
+usr/include/stropt.*
+usr/lib/*/libstropt*.so
+usr/lib/*/pkgconfig/stropt*
+usr/share/man/man*/stropt*.*

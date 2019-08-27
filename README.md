@@ -19,3 +19,54 @@ It is currently including the following projects:
 
 *Please refer to the development repositories above for cloning, updating, send bug reports, etc.*
 
+## Download and creation of debian packets
+
+* clone the git repository including the submodules:
+
+    ```
+    git clone --recurse-submodules https://github.com/virtualsquare/v2utils.git
+    ```
+
+* create the packets:
+
+    ```
+    cd v2utils
+    ./create_deb.sh newtag
+    ```
+
+    (newtag creates the orig.tar.gz source package)
+
+* update the whole source hierarchy including submodules:
+
+    ```
+    git pull --recurse-submodules
+    ```
+    
+* Update the packets:
+
+    ```
+    ./create_deb.sh
+    ```
+
+    or
+
+    ```
+    debuild -us -uc
+    ```
+
+* create the official signed packets:
+
+    ```
+    debuild
+    ```
+
+## Status:
+
+The packets get cleanly created.
+Lintian complains only for the improbable ITP bug number(0000).
+
+## Still to do:
+
+Double check source and runtime dependencies.
+File an ITP request
+Change the number of ITP in debian/changelog

@@ -1,0 +1,4 @@
+usr/include/fduserdata.*
+usr/lib/*/libfduserdata*.so
+usr/lib/*/pkgconfig/fduserdata*
+usr/share/man/man*/fduserdata*.*

@@ -1,0 +1,4 @@
+usr/include/vpoll.*
+usr/lib/*/libvpoll*.so
+usr/lib/*/pkgconfig/vpoll*
+usr/share/man/man*/vpoll*.*
