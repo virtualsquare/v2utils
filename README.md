@@ -14,6 +14,8 @@ It is currently including the following projects:
 * [libstropt](https://github.com/rd235/libstropt)
 * [libfduserdata](https://github.com/rd235/libfduserdata)
 * [libvpoll-eventfd](https://github.com/rd235/libvpoll-eventfd)
+* [libvolatilestream](https://github.com/rd235/libvolatilestream)
+* [userbindmount](https://github.com/rd235/userbindmount)
 
 *Do not clone or use this repository unless you are part of the development team, or you want to contribute to the project*
 
