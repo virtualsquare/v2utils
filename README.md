@@ -69,6 +69,6 @@ Lintian complains only for the improbable ITP bug number(0000).
 
 ## Still to do:
 
-Double check source and runtime dependencies.
+Double check runtime dependencies.
 File an ITP request
 Change the number of ITP in debian/changelog

@@ -1,0 +1,5 @@
+usr/include/userbindmount.*
+usr/lib/*/libuserbindmount.a
+usr/lib/*/libuserbindmount*.so
+usr/lib/*/pkgconfig/userbindmount*
+usr/share/man/man3/userbindmount*.*

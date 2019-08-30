@@ -1,0 +1,4 @@
+usr/include/volatilestream.*
+usr/lib/*/libvolatilestream*.so
+usr/lib/*/pkgconfig/volatilestream*
+usr/share/man/man3/volstream_open*.*

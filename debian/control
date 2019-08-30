@@ -1,7 +1,7 @@
 Source: v2utils
 Priority: optional
 Maintainer: Renzo Davoli <renzo@cs.unibo.it>
-Build-Depends: debhelper-compat (= 12), cmake (>= 3.12), ronn (>= 0.8)
+Build-Depends: debhelper-compat (= 12), cmake (>= 3.12), ronn (>= 0.8), libcap-dev
 Standards-Version: 4.4.0
 Section: libs
 Homepage: http://www.virtualsquare.org/
@@ -21,9 +21,9 @@ Section: libdevel
 Architecture: any
 Depends: libstropt0 (= ${binary:Version}), ${misc:Depends}
 Description: parse options from a string (supports quotation, option arguments)
- This small library parses a list of options from a string. Options can 
- be separated by spaces, commas, semicolons, tabs or new line.  Options 
- may have arguments.  It is possible to protect symbols and spaces using 
+ This small library parses a list of options from a string. Options can
+ be separated by spaces, commas, semicolons, tabs or new line.  Options
+ may have arguments.  It is possible to protect symbols and spaces using
  quote, double quote and backslash.
 
 Package: libstropt0
@@ -31,9 +31,9 @@ Section: devel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: parse options from a string (supports quotation, option arguments)
- This small library parses a list of options from a string. Options can 
- be separated by spaces, commas, semicolons, tabs or new line.  Options 
- may have arguments.  It is possible to protect symbols and spaces using 
+ This small library parses a list of options from a string. Options can
+ be separated by spaces, commas, semicolons, tabs or new line.  Options
+ may have arguments.  It is possible to protect symbols and spaces using
  quote, double quote and backslash.
 
 Package: libfduserdata-dev
@@ -41,7 +41,7 @@ Section: libdevel
 Architecture: any
 Depends: libfduserdata0 (= ${binary:Version}), ${misc:Depends}
 Description: associate file descriptors with user defined data
- This small library permits one to associate user defined data to file 
+ This small library permits one to associate user defined data to file
  descriptors.  This library is thread safe.
 
 Package: libfduserdata0
@@ -49,7 +49,7 @@ Section: devel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: associate file descriptors with user defined data
- This small library permits one to associate user defined data to file 
+ This small library permits one to associate user defined data to file
  descriptors.  This library is thread safe.
 
 Package: libvpoll-dev
@@ -70,3 +70,51 @@ Description:  generate synthetic events for poll/select/ppoll/pselect/epoll
  it  implements an emulator (providing only `EPOLLIN`, `EPOLLOUT` and a non
  standard version of EPOLLHUP/EPOLLRDHUP).
 
+Package: libvolatilestream-dev
+Section: libdevel
+Architecture: any
+Depends: libvolatilestream0 (= ${binary:Version}), ${misc:Depends}
+Description:  stdio stream as volatile memory buffers
+ A volatile stream is a stdio FILE* stream as a temporary dynamically
+ allocated (and deallocated) memory buffer.
+ The volstream_open function opens a stdio stream as a temporary memory
+ buffer. The buffer is dynamically  allocated, grows as needed and it is
+ automatically deallocated when the stream is closed.
+
+Package: libvolatilestream0
+Section: devel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description:  stdio stream as volatile memory buffers
+ A volatile stream is a stdio FILE* stream as a temporary dynamically
+ allocated (and deallocated) memory buffer.
+ The volstream_open function opens a stdio stream as a temporary memory
+ buffer. The buffer is dynamically  allocated, grows as needed and it is
+ automatically deallocated when the stream is closed.
+
+Package: libuserbindmount-dev
+Section: libdevel
+Architecture: any
+Depends: libuserbindmount0 (= ${binary:Version}), ${misc:Depends}
+Description: bind-mount in user namespaces
+ Bind mount files and create user namespaces where bind mount is allowed
+ as users. It does not need root access or specific capabilities to run
+ (provided  user-namespaces  are  supported)
+
+Package: libuserbindmount0
+Section: devel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcap
+Description:  bind-mount in user namespaces
+ Bind mount files and create user namespaces where bind mount is allowed
+ as users. It does not need root access or specific capabilities to run
+ (provided  user-namespaces  are  supported)
+
+Package: userbindmount
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libuserbindmount0
+Description:  bind-mount in user namespaces
+ Bind mount files and create user namespaces where bind mount is allowed
+ as users. It does not need root access or specific capabilities to run
+ (provided  user-namespaces  are  supported)

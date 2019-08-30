@@ -10,3 +10,9 @@
 [submodule "libvpoll-eventfd"]
 	path = libvpoll-eventfd
 	url = https://github.com/rd235/libvpoll-eventfd
+[submodule "libvolatilestream"]
+	path = libvolatilestream
+	url = https://github.com/rd235/libvolatilestream
+[submodule "userbindmount"]
+	path = userbindmount
+	url = https://github.com/rd235/userbindmount
