@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
   
-if [ $1 == 'newtag' ]
+if [ "x$1" == "xnewtag" ]
 then
 	SOURCE_ROOT=${PWD##*/}
 	SOURCE_NAME=$(dpkg-parsechangelog --show-field Source)

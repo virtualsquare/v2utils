@@ -21,6 +21,8 @@ It is currently including the following projects:
 
 ## Download and creation of debian packets
 
+* prerequisites: cmake, debuild, ronn (for the man pages)
+
 * clone the git repository including the submodules:
 
     ```
