@@ -44,6 +44,7 @@ It is currently including the following projects:
 
     ```
     git pull --recurse-submodules
+		git submodule foreach -q --recursive 'git checkout master; git pull'
     ```
     
 * Update the packets:

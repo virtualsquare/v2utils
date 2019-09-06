@@ -1,7 +1,7 @@
 Source: v2utils
 Priority: optional
 Maintainer: Renzo Davoli <renzo@cs.unibo.it>
-Build-Depends: debhelper-compat (= 12), cmake (>= 3.12), ronn (>= 0.8), libcap-dev
+Build-Depends: debhelper-compat (= 12), cmake (>= 3.12), libcap-dev
 Standards-Version: 4.4.0
 Section: libs
 Homepage: http://www.virtualsquare.org/
