@@ -104,7 +104,7 @@ Description: bind-mount in user namespaces
 Package: libuserbindmount0
 Section: devel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libcap
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcap2
 Description:  bind-mount in user namespaces
  Bind mount files and create user namespaces where bind mount is allowed
  as users. It does not need root access or specific capabilities to run
