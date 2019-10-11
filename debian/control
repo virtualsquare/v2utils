@@ -15,6 +15,8 @@ Description: Multiway branch (switch) for short strings in C
  strcase (or strcase_tolower) can be used in the expression of a switch
  statement to convert a string to an integer type, STRCASE generates  at
  compile time the integer constants for the case stanzas of the switch.
+ .
+ This package contains the development files used for C programs.
 
 Package: libstropt-dev
 Section: libdevel
@@ -25,9 +27,11 @@ Description: parse options from a string (supports quotation, option arguments)
  be separated by spaces, commas, semicolons, tabs or new line.  Options
  may have arguments.  It is possible to protect symbols and spaces using
  quote, double quote and backslash.
+ .
+ This package contains the development files used for C programs.
 
 Package: libstropt0
-Section: devel
+Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: parse options from a string (supports quotation, option arguments)
@@ -35,6 +39,8 @@ Description: parse options from a string (supports quotation, option arguments)
  be separated by spaces, commas, semicolons, tabs or new line.  Options
  may have arguments.  It is possible to protect symbols and spaces using
  quote, double quote and backslash.
+ .
+ This package contains the shared library.
 
 Package: libfduserdata-dev
 Section: libdevel
@@ -43,14 +49,18 @@ Depends: libfduserdata0 (= ${binary:Version}), ${misc:Depends}
 Description: associate file descriptors with user defined data
  This small library permits one to associate user defined data to file
  descriptors.  This library is thread safe.
+ .
+ This package contains the development files used for C programs.
 
 Package: libfduserdata0
-Section: devel
+Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: associate file descriptors with user defined data
  This small library permits one to associate user defined data to file
  descriptors.  This library is thread safe.
+ .
+ This package contains the shared library.
 
 Package: libvpoll-dev
 Section: libdevel
@@ -60,15 +70,19 @@ Description:  generate synthetic events for poll/select/ppoll/pselect/epoll
  This library uses eventfd/VPOLL if provided by the kernel otherwise
  it  implements an emulator (providing only `EPOLLIN`, `EPOLLOUT` and a non
  standard version of EPOLLHUP/EPOLLRDHUP).
+ .
+ This package contains the development files used for C programs.
 
 Package: libvpoll0
-Section: devel
+Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libfduserdata0
 Description:  generate synthetic events for poll/select/ppoll/pselect/epoll
  This library uses eventfd/VPOLL if provided by the kernel otherwise
  it  implements an emulator (providing only `EPOLLIN`, `EPOLLOUT` and a non
  standard version of EPOLLHUP/EPOLLRDHUP).
+ .
+ This package contains the shared library.
 
 Package: libvolatilestream-dev
 Section: libdevel
@@ -80,9 +94,11 @@ Description:  stdio stream as volatile memory buffers
  The volstream_open function opens a stdio stream as a temporary memory
  buffer. The buffer is dynamically  allocated, grows as needed and it is
  automatically deallocated when the stream is closed.
+ .
+ This package contains the development files used for C programs.
 
 Package: libvolatilestream0
-Section: devel
+Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description:  stdio stream as volatile memory buffers
@@ -91,6 +107,8 @@ Description:  stdio stream as volatile memory buffers
  The volstream_open function opens a stdio stream as a temporary memory
  buffer. The buffer is dynamically  allocated, grows as needed and it is
  automatically deallocated when the stream is closed.
+ .
+ This package contains the shared library.
 
 Package: libuserbindmount-dev
 Section: libdevel
@@ -100,15 +118,19 @@ Description: bind-mount in user namespaces
  Bind mount files and create user namespaces where bind mount is allowed
  as users. It does not need root access or specific capabilities to run
  (provided  user-namespaces  are  supported)
+ .
+ This package contains the development files used for C programs.
 
 Package: libuserbindmount0
-Section: devel
+Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libcap2
 Description:  bind-mount in user namespaces
  Bind mount files and create user namespaces where bind mount is allowed
  as users. It does not need root access or specific capabilities to run
  (provided  user-namespaces  are  supported)
+ .
+ This package contains the shared library.
 
 Package: userbindmount
 Section: utils
@@ -118,6 +140,8 @@ Description:  bind-mount in user namespaces
  Bind mount files and create user namespaces where bind mount is allowed
  as users. It does not need root access or specific capabilities to run
  (provided  user-namespaces  are  supported)
+ .
+ This package contains the user command based on libuserbindmount.
 
 Package: nlinline-dev
 Architecture: all
@@ -127,4 +151,6 @@ Description: inline library for networking configuration (via netlink)
  nlinline (netlink inline) is a library of inline functions providing 
  C programmers with very handy functions to configure network stacks. 
  nlinline is entirely implemented in a header file, nlinline.h.
+ .
+ This package contains the development files used for C programs.
 
