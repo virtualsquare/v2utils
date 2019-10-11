@@ -118,3 +118,13 @@ Description:  bind-mount in user namespaces
  Bind mount files and create user namespaces where bind mount is allowed
  as users. It does not need root access or specific capabilities to run
  (provided  user-namespaces  are  supported)
+
+Package: nlinline-dev
+Architecture: all
+Depends: ${misc:Depends}
+Section: libdevel
+Description: inline library for networking configuration (via netlink)
+ nlinline (netlink inline) is a library of inline functions providing 
+ C programmers with very handy functions to configure network stacks. 
+ nlinline is entirely implemented in a header file, nlinline.h.
+

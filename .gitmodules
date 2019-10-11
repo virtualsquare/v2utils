@@ -16,3 +16,6 @@
 [submodule "userbindmount"]
 	path = userbindmount
 	url = https://github.com/rd235/userbindmount
+[submodule "nlinline"]
+	path = nlinline
+	url = https://github.com/virtualsquare/nlinline.git
