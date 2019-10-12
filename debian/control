@@ -145,7 +145,7 @@ Description:  bind-mount in user namespaces
 
 Package: nlinline-dev
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, linux-libc-dev
 Section: libdevel
 Description: inline library for networking configuration (via netlink)
  nlinline (netlink inline) is a library of inline functions providing 
